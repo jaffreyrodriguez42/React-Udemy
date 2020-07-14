@@ -3,16 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const fName = "Jaff";
+  const lName = "Rodriguez";
+  const luckyNum = 7;
+
   return (
     <div>
       <h1>
-        My Favorite Foods
+        Hello {fName + " " + lName}!
       </h1>
-      <ul>
-        <li>Bacon</li>
-        <li>Jamon</li>
-        <li>Noodles</li>
-      </ul>
+      <p>My lucky numbers are {luckyNum} and {Math.floor(Math.random() * 10)}</p>
+
     </div>
   );
 }
